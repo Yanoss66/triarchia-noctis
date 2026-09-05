@@ -125,7 +125,7 @@ button, input { font: inherit; }
   width: 100%;
   height: auto;
   transform-origin: 50% 54%;
-  animation: hero-breathe 15s ease-in-out infinite;
+  animation: hero-breathe 10s ease-in-out infinite;
   will-change: transform, filter;
 }
 .hero-glow,
@@ -142,8 +142,8 @@ button, input { font: inherit; }
     radial-gradient(ellipse at 56% 58%, rgba(239,27,28,.13), transparent 34%),
     radial-gradient(ellipse at 63% 84%, rgba(174,13,17,.12), transparent 34%);
   mix-blend-mode: screen;
-  opacity: .48;
-  animation: hero-glow-pulse 5.4s ease-in-out infinite;
+  opacity: .58;
+  animation: hero-glow-pulse 4.2s ease-in-out infinite;
 }
 .hero-haze {
   inset: -12% -8%;
@@ -152,8 +152,8 @@ button, input { font: inherit; }
     radial-gradient(ellipse at 72% 70%, rgba(124,14,19,.14), transparent 31%),
     linear-gradient(105deg, transparent 22%, rgba(255,255,255,.025) 48%, transparent 70%);
   filter: blur(12px);
-  opacity: .32;
-  animation: hero-haze-drift 19s ease-in-out infinite alternate;
+  opacity: .42;
+  animation: hero-haze-drift 12s ease-in-out infinite alternate;
 }
 .hero-embers {
   inset: 5% 0 -12%;
@@ -161,11 +161,11 @@ button, input { font: inherit; }
     radial-gradient(circle, rgba(255,103,59,.52) 0 1px, transparent 1.6px),
     radial-gradient(circle, rgba(255,48,39,.34) 0 1px, transparent 1.5px),
     radial-gradient(circle, rgba(255,184,92,.30) 0 1px, transparent 1.5px);
-  background-size: 113px 109px, 167px 151px, 211px 187px;
+  background-size: 95px 91px, 143px 131px, 187px 169px;
   background-position: 13px 94px, 76px 143px, 122px 168px;
-  opacity: .18;
+  opacity: .28;
   mask-image: linear-gradient(to top, #000 0%, rgba(0,0,0,.65) 34%, transparent 75%);
-  animation: hero-embers-rise 14s linear infinite;
+  animation: hero-embers-rise 9s linear infinite;
 }
 .hero-hotspot {
   position: absolute;
@@ -189,20 +189,20 @@ button, input { font: inherit; }
 }
 
 @keyframes hero-breathe {
-  0%, 100% { transform: scale(1.002); filter: brightness(.99) saturate(1); }
-  50% { transform: scale(1.012); filter: brightness(1.035) saturate(1.04); }
+  0%, 100% { transform: scale(1.002); filter: brightness(.985) saturate(1); }
+  50% { transform: scale(1.016); filter: brightness(1.055) saturate(1.06); }
 }
 @keyframes hero-glow-pulse {
-  0%, 100% { opacity: .35; }
-  50% { opacity: .62; }
+  0%, 100% { opacity: .30; }
+  50% { opacity: .78; }
 }
 @keyframes hero-haze-drift {
-  0% { transform: translate3d(-1.2%, .5%, 0) scale(1.01); }
-  100% { transform: translate3d(1.5%, -1%, 0) scale(1.04); }
+  0% { transform: translate3d(-3%, 1.2%, 0) scale(1.015); }
+  100% { transform: translate3d(3.5%, -1.8%, 0) scale(1.055); }
 }
 @keyframes hero-embers-rise {
-  0% { transform: translate3d(0, 7%, 0); }
-  100% { transform: translate3d(.8%, -13%, 0); }
+  0% { transform: translate3d(0, 10%, 0); }
+  100% { transform: translate3d(1.2%, -22%, 0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
