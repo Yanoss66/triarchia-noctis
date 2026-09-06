@@ -749,3 +749,29 @@ button, input { font: inherit; }
   .key-bonus { flex-direction: column; align-items: flex-start; }
   .guide-actions { flex-direction: column; }
 }
+
+/* V1.7.4 — verrouillage bannière d'accueil statique */
+.hero-image-layer {
+  transform: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+.hero-banner-image {
+  animation: none !important;
+  transform: none !important;
+  filter: none !important;
+  will-change: auto !important;
+}
+.hero-glow,
+.hero-haze,
+.hero-embers {
+  display: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+
+/* V1.7.4 — correctif bannière statique */
+.hero-banner-image { animation: none !important; transform: none !important; filter: none !important; }
+.hero-image-layer { transform: none !important; transition: none !important; }
+.hero-glow, .hero-haze, .hero-embers { display: none !important; animation: none !important; }
