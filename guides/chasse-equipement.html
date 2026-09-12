@@ -16,7 +16,11 @@
 .summary-box { padding:15px; border:1px solid var(--line); border-radius:11px; background:rgba(10,14,17,.68); }
 .summary-box h4 { margin:0 0 10px; }
 .summary-box .threshold-list strong { font-size:18px; }
-.article-side { align-self: start; }
+.article-main,
+.article-side,
+.article-panel { min-width: 0; }
+.article-side { align-self: start; width: 100%; max-width: 100%; }
+.comparison-table-wrap { max-width: 100%; }
 .sticky-panel { position: static; top: auto; }
 @media (max-width: 760px) {
   .hunt-preview, .summary-columns { grid-template-columns:1fr; }
