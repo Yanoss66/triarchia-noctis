@@ -1,0 +1,333 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#07090b">
+<title>Guide approfondi — La Chasse : quel équipement privilégier ? | Triarchia Noctis</title><link rel="stylesheet" href="../assets/css/style.css">
+<style>
+.quick-selector { display:grid; gap:12px; }
+.quick-selector label { display:grid; gap:6px; }
+.quick-selector label > span { color: var(--gold); font-size: 11px; text-transform: uppercase; letter-spacing: .09em; }
+.quick-selector select { min-height:44px; width:100%; border:1px solid var(--line); border-radius:8px; background:#090d10; color:#fff; padding:0 12px; }
+.quick-selector-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.hunt-preview { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:16px; }
+.hunt-preview > div { padding:15px; border:1px solid var(--line); border-radius:11px; background:rgba(10,14,17,.68); }
+.hunt-preview span, .selector-note { display:block; color:var(--muted); font-size:13px; }
+.hunt-preview strong { display:block; margin-top:10px; color:#fff; }
+.table-note { margin-top:12px; color:var(--muted); font-size:13px; }
+.summary-columns { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px; }
+.summary-box { padding:15px; border:1px solid var(--line); border-radius:11px; background:rgba(10,14,17,.68); }
+.summary-box h4 { margin:0 0 10px; }
+.summary-box .threshold-list strong { font-size:18px; }
+.article-side { align-self: start; }
+.sticky-panel { position: static; top: auto; }
+@media (max-width: 760px) {
+  .hunt-preview, .summary-columns { grid-template-columns:1fr; }
+}
+</style></head><body><header class="site-header">
+  <div class="container header-row">
+    <a class="brand" href="../index.html" aria-label="Retour à l'accueil">
+      <img class="brand-mark" src="../assets/images/blason-clan.jpg" alt="Blason Triarchia Noctis">
+      <div>
+        <div class="brand-title">Triarchia Noctis</div>
+        <div class="brand-motto">Tres Hereditates. Unus Sanguis. Una Gens.</div>
+      </div>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="../outils.html">Outils</a>
+      <a href="../guides.html" class="active">Guides</a>
+      <a href="../clan.html">Clan</a>
+      <a href="../actualites.html">Actualités</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="guide-hero">
+  <div class="container guide-hero-shell split-layout">
+    <div class="guide-hero-copy hero-left">
+      <div class="section-kicker">Guide approfondi</div>
+      <h1>La Chasse — quel équipement privilégier ?</h1>
+      <p>Un guide pratique pour comprendre <strong>quelle statistique défensive privilégier</strong> selon la rencontre de <strong>La Chasse</strong>, afin de survivre sur la durée et d’optimiser son build sur <strong>Ultima Thule</strong>.</p>
+      <div class="guide-actions">
+        <a class="btn btn-primary" href="https://wiki.fr.bloodwars.net/index.php?title=Guide_de_jeu" target="_blank" rel="noopener">Voir le guide de jeu ↗</a>
+        <a class="btn" href="../guides.html">Retour aux guides</a>
+      </div>
+    </div>
+    <div class="guide-hero-card hero-right">
+      <img src="../assets/images/guide-chasse.png" alt="Table de chasse BloodWars avec armes, monstres et carte tactique">
+    </div>
+  </div>
+</section>
+
+<section class="section compact-section">
+  <div class="container">
+    <nav class="subnav" aria-label="Sommaire du guide">
+      <a href="#principe">Principe</a>
+      <a href="#selection">Choix rapide</a>
+      <a href="#tableau">Tableau</a>
+      <a href="#rencontres">Rencontres</a>
+      <a href="#resume">Résumé</a>
+    </nav>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container article-layout">
+    <article class="article-main">
+      <div class="article-panel" id="principe">
+        <div class="section-kicker">Vue d'ensemble</div>
+        <h2>Le principe essentiel</h2>
+        <p>Dans <strong>La Chasse</strong>, l’objectif n’est pas simplement de faire un gros score de dégâts sur les premières vagues. Il faut penser l’événement comme un <strong>marathon</strong> : le même équipement est conservé pendant toute la Chasse, tandis que les monstres deviennent progressivement beaucoup plus dangereux.</p>
+        <p>Le but est donc de préparer, <strong>avant de lancer la Chasse</strong>, un équipement capable de :</p>
+        <ul class="guide-list">
+          <li>toucher suffisamment les monstres ;</li>
+          <li>mais surtout de <strong>réduire au maximum le nombre d’attaques reçues</strong> ;</li>
+          <li>conserver assez de PV pour survivre aux quelques attaques qui passent ;</li>
+          <li>tout en gardant suffisamment de dégâts pour ne pas laisser les monstres s’accumuler.</li>
+        </ul>
+        <div class="callout-quote">La statistique défensive à privilégier dépend avant tout du <strong>type d’arme utilisé par les monstres</strong> de la rencontre.</div>
+        <p>Si le monstre attaque <strong>au corps à corps</strong>, il faut avant tout monter l’<strong>Agilité</strong>. S’il attaque <strong>avec des armes à feu</strong>, il faut plutôt monter la <strong>Perception</strong>.</p>
+        <p>Une fois cette statistique principale maximisée, la logique générale devient :</p>
+        <div class="formula-line"><strong>Stat principale → Esquive → PV → Défense / dégâts selon la rencontre</strong></div>
+      </div>
+
+      <div class="article-panel" id="selection">
+        <div class="section-kicker">Accès rapide</div>
+        <h2>Choisir une rencontre et voir la stratégie</h2>
+        <p>Utilise ce déroulant pour afficher immédiatement la logique du build à privilégier et accéder directement à la rencontre qui t’intéresse.</p>
+        <div class="quick-selector">
+          <label>
+            <span>Rencontre de chasse</span>
+            <select id="hunt-selector">
+              <option value="chien">Chien Démoniaque</option>
+              <option value="demon">Le Démon</option>
+              <option value="moindre">Moindre Démon</option>
+              <option value="superieur">Démon supérieur</option>
+              <option value="devoreur">Dévoreur de cadavres</option>
+              <option value="massacrateur">Massacrateur</option>
+              <option value="necromorphe">Nécromorphe</option>
+            </select>
+          </label>
+        </div>
+        <div id="hunt-preview" class="hunt-preview" aria-live="polite"></div>
+        <div class="quick-selector-actions">
+          <a class="btn btn-primary" id="hunt-go" href="#chien">Aller à la section</a>
+          <a class="btn" href="#tableau">Voir le tableau complet</a>
+        </div>
+        <div class="table-note">Les caractéristiques indiquées au niveau 15 sont volontairement présentées comme <strong>estimées</strong> afin de conserver une lecture homogène du guide.</div>
+      </div>
+
+      <div class="article-panel" id="tableau">
+        <div class="section-kicker">Tableau des rencontres</div>
+        <h2>Vue rapide par type de chasse</h2>
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Rencontre</th>
+                <th>Type d’attaque</th>
+                <th>Caractéristique estimée au N15</th>
+                <th>Stuff à privilégier</th>
+                <th>Priorité secondaire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Chien Démoniaque</th><td>Griffes — CàC</td><td><strong>AGI estimée : ~761</strong></td><td>🟢 <strong>FULL AGILITÉ</strong></td><td>Esquive → PV</td></tr>
+              <tr><th>Le Démon</th><td>Fusil de l’Abîme</td><td><strong>PER estimée : ~850</strong></td><td>🔵 <strong>FULL PERCEPTION</strong></td><td>Esquive → PV</td></tr>
+              <tr><th>Moindre Démon</th><td>Fusil de l’Abîme</td><td><strong>PER estimée : ~1 096</strong></td><td>🔵 <strong>FULL PERCEPTION</strong></td><td>Esquive → PV</td></tr>
+              <tr><th>Démon supérieur</th><td>Fusil abyssal de la punition</td><td><strong>PER estimée : ~1 165</strong></td><td>🔵 <strong>FULL PERCEPTION</strong></td><td>PV → Esquive</td></tr>
+              <tr><th>Dévoreur de cadavres</th><td>Griffes — CàC</td><td><strong>AGI estimée : ~1 660</strong></td><td>🟢 <strong>FULL AGILITÉ</strong></td><td>Esquive → PV</td></tr>
+              <tr><th>Massacrateur</th><td>Lame de la douleur — CàC</td><td><strong>AGI estimée : ~1 777</strong></td><td>🟢 <strong>FULL AGILITÉ</strong></td><td>Esquive → PV</td></tr>
+              <tr><th>Nécromorphe</th><td>Lame de la Vacuité — CàC</td><td><strong>AGI estimée : ~1 900</strong></td><td>🟢 <strong>FULL AGILITÉ</strong></td><td>Esquive → PV</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note"><strong>Important :</strong> les valeurs N15 sont données comme <strong>estimées</strong>, y compris lorsqu’un rapport de combat a permis de vérifier une valeur sur une vague avancée. Le but est d’offrir une base de préparation cohérente et facile à lire.</p>
+      </div>
+
+      <div id="rencontres"></div>
+
+      <div class="article-panel" id="chien">
+        <div class="section-kicker">Rencontre corps à corps</div>
+        <h2>🟢 Chien Démoniaque</h2>
+        <div class="key-bonus">Type d’attaque : Griffes — CàC <span>FULL AGILITÉ</span></div>
+        <p>Les Chiens démoniaques attaquent <strong>à l’aide de griffes</strong>. Leur toucher est donc directement lié à l’<strong>Agilité</strong>.</p>
+        <div class="palier-box">AGI estimée N15 : <strong>~761</strong></div>
+        <p>Un Chien de niveau 85 présent sur le niveau 15 possédait notamment <strong>761 Agilité</strong> dans le RC étudié.</p>
+        <p>Ils disposent également de <strong>l’Aura Démoniaque</strong>, qui augmente leurs dégâts et neutralise la défense ennemie via les Tentacules du Mal. Cela réduit fortement l’intérêt d’un build basé principalement sur la Défense.</p>
+        <div class="callout-quote">Conseil : <strong>AGILITÉ → Esquive → PV</strong></div>
+        <p>Éviter les attaques est ici beaucoup plus rentable que chercher à les encaisser.</p>
+      </div>
+
+      <div class="article-panel" id="demon">
+        <div class="section-kicker">Rencontre à distance</div>
+        <h2>🔵 Le Démon</h2>
+        <div class="key-bonus">Type d’attaque : Fusil de l’Abîme <span>FULL PERCEPTION</span></div>
+        <p>Le Démon attaque avec un <strong>Fusil de l’Abîme</strong>. Il faut donc privilégier la <strong>Perception</strong>, pas l’Agilité.</p>
+        <div class="palier-box">PER estimée N15 : <strong>~850</strong></div>
+        <p>Un Démon de niveau 215 observé au niveau 15 possédait précisément <strong>850 Perception</strong>.</p>
+        <div class="callout-quote">Conseil : <strong>PERCEPTION → Esquive → PV</strong></div>
+        <p>Venir en Full Agilité contre cette rencontre est une mauvaise idée : l’Agilité ne constitue pas la défense principale contre ses tirs.</p>
+      </div>
+
+      <div class="article-panel" id="moindre">
+        <div class="section-kicker">Rencontre à distance</div>
+        <h2>🔵 Moindre Démon</h2>
+        <div class="key-bonus">Type d’attaque : Fusil de l’Abîme <span>FULL PERCEPTION</span></div>
+        <p>Le Moindre Démon attaque lui aussi au <strong>Fusil de l’Abîme</strong>. La logique reste donc la même que pour Le Démon, mais la montée en Perception devient encore plus importante sur les dernières vagues.</p>
+        <div class="palier-box">PER estimée N15 : <strong>~1 096</strong></div>
+        <p>À un stade précédent de la Chasse, un Moindre Démon de niveau 180 possédait déjà <strong>805 Perception</strong>, avant l’augmentation accélérée des niveaux suivants.</p>
+        <div class="callout-quote">Conseil : <strong>PERCEPTION → Esquive → PV</strong></div>
+        <p>Ne sacrifie pas inutilement de la Perception pour de l’Agilité sur cette rencontre.</p>
+      </div>
+
+      <div class="article-panel" id="superieur">
+        <div class="section-kicker">Rencontre à distance</div>
+        <h2>🔵 Démon supérieur</h2>
+        <div class="key-bonus">Type d’attaque : Fusil abyssal de la punition <span>FULL PERCEPTION</span></div>
+        <p>Le Démon supérieur attaque avec le <strong>Fusil abyssal de la punition</strong>. C’est donc encore une rencontre orientée <strong>Perception</strong>.</p>
+        <div class="palier-box">PER estimée N15 : <strong>~1 165</strong></div>
+        <p>Les statistiques du Démon supérieur progressent très fortement sur les dernières vagues : un niveau 400 observé plus tôt possède déjà <strong>547 Perception</strong> avant le scaling final.</p>
+        <div class="callout-quote">Conseil : <strong>PERCEPTION → PV → Esquive</strong></div>
+        <p>Il faut arriver avec le maximum raisonnable de Perception tout en conservant une bonne réserve de PV.</p>
+      </div>
+
+      <div class="article-panel" id="devoreur">
+        <div class="section-kicker">Rencontre corps à corps</div>
+        <h2>🟢 Dévoreur de cadavres</h2>
+        <div class="key-bonus">Type d’attaque : Griffes — CàC <span>FULL AGILITÉ</span></div>
+        <p>Le Dévoreur attaque <strong>à l’aide de griffes</strong>. Les RC montrent clairement que ses attaques peuvent être ratées ou esquivées.</p>
+        <div class="palier-box">AGI estimée N15 : <strong>~1 660</strong></div>
+        <p>Un Dévoreur de niveau 355 observé avant le niveau maximal était déjà à <strong>780 Agilité</strong>, avec une forte progression restant à appliquer.</p>
+        <div class="callout-quote">Conseil : <strong>AGILITÉ → Esquive → PV</strong></div>
+        <p>La très forte Agilité finale rend cette rencontre bien plus exigeante que celle des Chiens.</p>
+      </div>
+
+      <div class="article-panel" id="massacrateur">
+        <div class="section-kicker">Rencontre corps à corps</div>
+        <h2>🟢 Massacrateur</h2>
+        <div class="key-bonus">Type d’attaque : Lame de la douleur — CàC <span>FULL AGILITÉ</span></div>
+        <p>Le Massacrateur attaque avec la <strong>Lame de la douleur</strong> et peut enchaîner un grand nombre d’attaques. Les RC montrent que celles-ci restent ratables et esquivables.</p>
+        <div class="palier-box">AGI estimée N15 : <strong>~1 777</strong></div>
+        <p>Un Massacrateur de niveau 300 possède déjà <strong>835 Agilité</strong> au point de progression observé.</p>
+        <div class="callout-quote">Conseil : <strong>AGILITÉ → Esquive → PV</strong></div>
+        <p>Sur une rencontre avec autant d’attaques, quelques pourcents de coups évités supplémentaires peuvent représenter énormément de dégâts économisés sur l’ensemble de la Chasse.</p>
+      </div>
+
+      <div class="article-panel" id="necromorphe">
+        <div class="section-kicker">Rencontre corps à corps</div>
+        <h2>🟢 Nécromorphe</h2>
+        <div class="key-bonus">Type d’attaque : Lame de la Vacuité <span>FULL AGILITÉ</span></div>
+        <p>Le Nécromorphe attaque avec la <strong>Lame de la Vacuité</strong>. Il utilise également <strong>Les Chemins de la Vacuité</strong>, mais les attaques qui suivent peuvent toujours être ratées ou esquivées dans les rapports étudiés.</p>
+        <div class="palier-box">AGI estimée N15 : <strong>~1 900</strong></div>
+        <p>C’est actuellement la valeur d’Agilité estimée la plus élevée parmi les rencontres étudiées. Un Nécromorphe de niveau 170 était déjà à <strong>896 Agilité</strong> avant les derniers niveaux de progression.</p>
+        <div class="callout-quote">Conseil : <strong>AGILITÉ → Esquive → PV</strong></div>
+        <p>Sur cette rencontre, il faut pousser l’Agilité aussi haut que raisonnablement possible.</p>
+      </div>
+
+      <div class="article-panel" id="resume">
+        <div class="section-kicker">Résumé express</div>
+        <h2>À retenir</h2>
+        <div class="summary-columns">
+          <div class="summary-box">
+            <h4>🟢 Équipement AGILITÉ</h4>
+            <div class="threshold-list">
+              <div><span>Chien Démoniaque</span><strong>AGI estimée N15 : ~761</strong></div>
+              <div><span>Dévoreur de cadavres</span><strong>AGI estimée N15 : ~1 660</strong></div>
+              <div><span>Massacrateur</span><strong>AGI estimée N15 : ~1 777</strong></div>
+              <div><span>Nécromorphe</span><strong>AGI estimée N15 : ~1 900</strong></div>
+            </div>
+          </div>
+          <div class="summary-box">
+            <h4>🔵 Équipement PERCEPTION</h4>
+            <div class="threshold-list">
+              <div><span>Le Démon</span><strong>PER estimée N15 : ~850</strong></div>
+              <div><span>Moindre Démon</span><strong>PER estimée N15 : ~1 096</strong></div>
+              <div><span>Démon supérieur</span><strong>PER estimée N15 : ~1 165</strong></div>
+            </div>
+          </div>
+        </div>
+        <ol class="guide-steps">
+          <li><strong>Identifier la rencontre.</strong></li>
+          <li>Regarder son <strong>type d’attaque</strong>.</li>
+          <li>Équiper <strong>Full AGI</strong> contre les rencontres CàC ou <strong>Full PER</strong> contre les rencontres au gun.</li>
+          <li>Ajouter ensuite de <strong>l’Esquive</strong> et des <strong>PV</strong>.</li>
+          <li>Conserver suffisamment de dégâts pour éliminer rapidement les monstres.</li>
+        </ol>
+        <div class="callout-quote">Moins les monstres vous touchent, moins vous consommez vos PV au fil des vagues. Et sur <strong>15 niveaux successifs</strong>, cette différence peut décider si vous terminez ou non La Chasse.</div>
+        <p class="muted"><em>Guide établi à partir de rapports de combat réels UT. Les caractéristiques maximales sont données à titre estimatif afin d’aider à la préparation des builds et pourront être affinées avec de nouveaux RC.</em></p>
+      </div>
+    </article>
+
+    <aside class="article-side">
+      <div class="article-panel sticky-panel">
+        <div class="section-kicker">Résumé express</div>
+        <h3 class="mt-0">Logique générale</h3>
+        <div class="mini-summary">
+          <div><span>Principe</span><strong>La Chasse se joue comme un marathon</strong></div>
+          <div><span>Monstre CàC</span><strong>Privilégier l’Agilité</strong></div>
+          <div><span>Monstre au fusil</span><strong>Privilégier la Perception</strong></div>
+          <div><span>Après la stat principale</span><strong>Esquive → PV → Défense / dégâts</strong></div>
+        </div>
+        <h3>Accès rapide</h3>
+        <div class="threshold-list">
+          <div><span>Build AGI</span><strong>Chien, Dévoreur, Massacrateur, Nécromorphe</strong></div>
+          <div><span>Build PER</span><strong>Démon, Moindre Démon, Démon supérieur</strong></div>
+        </div>
+        <div class="guide-actions guide-actions-column">
+          <a class="btn btn-primary" href="https://wiki.fr.bloodwars.net/index.php?title=Guide_de_jeu" target="_blank" rel="noopener">Guide de jeu complet ↗</a>
+          <a class="btn" href="../guides.html">Retour aux guides</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+</main><footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <strong>TRIARCHIA NOCTIS — =TN=</strong>
+      <span>Clan BloodWars — Serveur UT1</span>
+      <span><em>Tres Hereditates. Unus Sanguis. Una Gens.</em></span>
+    </div>
+    <a class="btn btn-primary" href="https://fr.bloodwars.net/" target="_blank" rel="noopener">Jouer à BloodWars ↗</a>
+  </div>
+  <div class="footer-bottom"><div class="container">© 2026 Triarchia Noctis — Site communautaire non officiel BloodWars.</div></div>
+</footer><script src="../assets/js/script.js"></script>
+<script>
+(function () {
+  const data = {
+    chien: {target:'#chien', type:'Griffes — CàC', stat:'AGI estimée N15 : ~761', build:'🟢 Full Agilité', secondary:'Esquive → PV', note:'Aura Démoniaque : mieux vaut éviter les coups que miser sur la Défense.'},
+    demon: {target:'#demon', type:'Fusil de l’Abîme', stat:'PER estimée N15 : ~850', build:'🔵 Full Perception', secondary:'Esquive → PV', note:'L’Agilité n’est pas la défense principale contre ses tirs.'},
+    moindre: {target:'#moindre', type:'Fusil de l’Abîme', stat:'PER estimée N15 : ~1 096', build:'🔵 Full Perception', secondary:'Esquive → PV', note:'La Perception devient encore plus importante sur les dernières vagues.'},
+    superieur: {target:'#superieur', type:'Fusil abyssal de la punition', stat:'PER estimée N15 : ~1 165', build:'🔵 Full Perception', secondary:'PV → Esquive', note:'Conserver une bonne réserve de PV en plus de la Perception.'},
+    devoreur: {target:'#devoreur', type:'Griffes — CàC', stat:'AGI estimée N15 : ~1 660', build:'🟢 Full Agilité', secondary:'Esquive → PV', note:'Rencontre nettement plus exigeante que celle des Chiens.'},
+    massacrateur: {target:'#massacrateur', type:'Lame de la douleur — CàC', stat:'AGI estimée N15 : ~1 777', build:'🟢 Full Agilité', secondary:'Esquive → PV', note:'Beaucoup d’attaques : chaque coup évité compte énormément.'},
+    necromorphe: {target:'#necromorphe', type:'Lame de la Vacuité', stat:'AGI estimée N15 : ~1 900', build:'🟢 Full Agilité', secondary:'Esquive → PV', note:'La valeur d’Agilité estimée la plus élevée parmi les rencontres listées.'}
+  };
+  const select = document.getElementById('hunt-selector');
+  const preview = document.getElementById('hunt-preview');
+  const go = document.getElementById('hunt-go');
+  function render() {
+    const item = data[select.value];
+    if (!item) return;
+    preview.innerHTML = `
+      <div><span>Type d’attaque</span><strong>${item.type}</strong></div>
+      <div><span>Statistique à viser</span><strong>${item.stat}</strong></div>
+      <div><span>Build conseillé</span><strong>${item.build}</strong></div>
+      <div><span>Priorité secondaire</span><strong>${item.secondary}</strong></div>
+      <div style="grid-column:1 / -1"><span>Rappel</span><strong>${item.note}</strong></div>
+    `;
+    go.setAttribute('href', item.target);
+  }
+  select.addEventListener('change', render);
+  go.addEventListener('click', function (event) {
+    event.preventDefault();
+    const item = data[select.value];
+    if (!item) return;
+    const el = document.querySelector(item.target);
+    if (!el) return;
+    el.scrollIntoView({ behavior:'smooth', block:'start' });
+    history.replaceState(null, '', item.target);
+  });
+  render();
+})();
+</script></body></html>
